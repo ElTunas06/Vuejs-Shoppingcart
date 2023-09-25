@@ -1,11 +1,15 @@
 <script setup>
-
+import { ref } from 'vue';
+const header = ref(' Mi carrito de compras')
 </script>
 
 <template>
-<h> Mi carrito de compras </h>  
+<h1> <i class="material-icons shopping-cart-icon "> local_mall</i>{{ header  }}
+</h1>  
 </template>
 
 <style scoped>
-
+.shopping-cart-icon{
+    font-size: 20rem;
+}
 </style>
